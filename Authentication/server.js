@@ -5,7 +5,6 @@ var app=express();
 app.use(bodyParser.json());
 var fileName = "credential.json";
 
-
 app.get('/',(req,res)=>{
     var htmlstring="<h1>welcome to hr application</h1>"+
     "<hr/>"+
@@ -27,25 +26,30 @@ app.get("/api/people",(req,res)=>{
     });
 });
 
-app.post("/api/login", (req, res) => {
 
-  let url = req.url;
-  let getData = req.body;
-
-    fs.readFile(fileName,(err,data)=>{
-        var people=JSON.parse(data.toString());
-        var yourdata = people.find((member) => member.email === getData.email);
-
-         if(yourdata &&yourdata.password && getData.password)
+app.post("/api/login", (req, res) => 
+    {
+      let url = req.url;
+      let getData = req.body;
+      var fileName = "credential.json";
+    
+        fs.readFile(fileName, (err, data) => 
+        {
+            var people = JSON.parse(data.toString());
+            var yourdata = people.find((member) => member.email == getData.email && member.password == getData.password );
+            console.log(yourdata);
+            if (yourdata ) 
             {
-              console.log("welcome "+yourdata.email);
-            }
-            else
+                res.send("welcome " + yourdata.email);
+            } 
+            else 
             {
-                console.log("Invalid user")
+                res.send("Invalid user");
             }
+        });
     });
-});
+
+
 
 app.post("/api/insertCredential", (req, res) => {
     let url = req.url;

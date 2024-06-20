@@ -11,7 +11,7 @@ var status = false;
 //   state : keys with their respective value
 //   behaviour : method
 //   identifier : unique name/no
-
+// let , var =declaration
 console.log("count : " + count );
 console.log("title : " + title );
 

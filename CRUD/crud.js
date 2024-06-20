@@ -2,7 +2,7 @@
 // Insert , update , delete , get from JSON array (Collection operation)
 // Insert , update, delete,get from JSON file (I/O Operation)
 var removePerson = {};
-//Initializing new array
+//Initializing new array of object
 var members=[
     {"id":1 ,"Pname":"Disha" ,"city":"pune"},
     {"id":2 ,"Pname":"Sanika" ,"city":"pune"},
@@ -46,8 +46,8 @@ var insert = function(person){
    removePerson.push(person);
     console.log(removePerson);
 }
-person= {"id":5 ,
-    "Pname":"Darshan" ,
+person= {"id":7 ,
+    "Pname":"nmrta" ,
     "city":"pune"};
 
 insert(person);
