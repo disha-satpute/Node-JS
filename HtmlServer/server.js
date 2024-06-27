@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
 
 
 var fileName = "credential.json";
-app.post("/api/login", (req, res) => 
+app.post("/api/login", (req, res) =>
     {
       let getData = req.body;
       var folderpath = "D:/TAP/MERN Stack/HtmlServer/public";
@@ -24,12 +24,12 @@ app.post("/api/login", (req, res) =>
             var people = JSON.parse(data.toString());
             var yourdata = people.find((member) => member.email == getData.email && member.password == getData.password );
             console.log(yourdata);
-            if (yourdata) 
+            if (yourdata)
             {
-               
+
                 res.sendFile("welcome.html",{root :folderpath});
-            } 
-            else 
+            }
+            else
             {
                 res.sendFile("login.html",{root :folderpath});
 
