@@ -1,0 +1,11 @@
+[
+    {"ProductId":"1", "ProductName" :"Lipstick","ProductPrice":90},
+
+   {"ProductId":"2","ProductName":"NailPaint","ProductPrice":50},
+
+   {"ProductId":"3","ProductName":"Earring","ProductPrice":70},
+
+   { "ProductId":"4","ProductName":"Bangles","ProductPrice":30},
+
+   {"ProductId":"5","ProductName":"Necklace","ProductPrice":200}
+]
