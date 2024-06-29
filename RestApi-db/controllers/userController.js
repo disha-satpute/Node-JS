@@ -1,6 +1,6 @@
 const sql=require('../models/db');
 
-exports.getAll=(req, res)=>{  
+exports.getAll=(req, res)=>{
     let command="SELECT * FROM employee";
     sql.query(command,(err, rows, fields)=>{
         var row1= JSON.stringify(rows);
@@ -16,7 +16,7 @@ exports.insert=(req,res)=>{
         }
         var member=rows;
         res.send(member);
-      
+
     });
 }
 
@@ -28,7 +28,7 @@ exports.update=(req,res)=>{
         }
         var member=rows;
         res.send(member);
-      
+
     });
 }
 exports.delete=(req,res)=>{

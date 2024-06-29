@@ -15,7 +15,7 @@ app.get("/api/orders",(req,res)=>{
     let data=jwt.verify(token,secretKey);
 
     if(data.client == "disha2@gmail.com"){
-        let orders =[
+        let orders = [
             {"id":101,"date":"20/02/2022","price":2300,"status":"processed"},
             {"id":102,"date":"02/04/2022","price":2300,"status":"rejected"},
             {"id":103,"date":"25/04/2022","price":2300,"status":"processed"},

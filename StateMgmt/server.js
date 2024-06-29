@@ -58,7 +58,7 @@ app.get("/api/addToCart/:id", (req, res) => {
 //remove from cart
 app.get("/api/removeFromCart/:id", (req,res) => {
     const id = req.params.id;
- 
+
     if (req.session.cart) {
         req.session.cart = req.session.cart.filter(product => product.productId !== id);
         res.send(req.session.cart);
