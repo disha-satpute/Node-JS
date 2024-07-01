@@ -3,7 +3,11 @@ const express = require('express');
 const router = require('./router');
 
 const app = express();
+
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
 app.set('view engine', 'ejs');
+
 router(app);
 
 app.listen(6060,()=>{
