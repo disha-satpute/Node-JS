@@ -1,3 +1,5 @@
+//controlllers
+
 const ejs = require('ejs');
 
 exports.home=(req,res)=>{

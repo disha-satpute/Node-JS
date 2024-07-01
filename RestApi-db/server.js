@@ -1,6 +1,8 @@
+//module 
 const express = require('express');
 const routes= require('./router');
 
+//global declaration
  const app=express();
 
  //middleware configuration
