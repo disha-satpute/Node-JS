@@ -1,9 +1,9 @@
-
+//models
 const express = require('express');
 const router = require('./router');
-
+//global declaration
 const app = express();
-
+//middleware configuration
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.set('view engine', 'ejs');
