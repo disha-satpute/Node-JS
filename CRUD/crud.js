@@ -14,15 +14,15 @@ var members=[
 var getAll = function(){
     return members;
 }
-console.log(getAll());
+//console.log(getAll());
 
 //function to search data using id 
 var getById=function(Id){
     var searchPerson = {};
-    searchPerson= members.find((person)=>(person.id==Id));
+    searchPerson= members.find((person)=>(person.id==Id));  //alternate name
     console.log(searchPerson);
 }
-getById(4);
+//getById(2);
 
 //function to search data using name
  var getByName=function(Name){
@@ -30,23 +30,23 @@ getById(4);
     foundPerson = members.find((person)=>(person.Pname==Name));
     console.log(foundPerson);
  }
- getByName("Disha");
+ //getByName("Disha");
 
  //function to Delete data using id
- console.log("after delete");
+ //console.log("after delete");
  var remove=function(Id){
-   
+
     removePerson= members.filter((person)=>person.id!==Id);
     console.log(removePerson);
 }
-remove(2);
+ remove(4);
 
-//function tu add data 
+//function tu add data
 var insert = function(person){
-   removePerson.push(person);
-    console.log(removePerson);
+  members.push(person);
+    console.log(members);
 }
-person= {"id":7 ,
+person= {"id":8 ,
     "Pname":"nmrta" ,
     "city":"pune"};
 

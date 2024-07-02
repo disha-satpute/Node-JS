@@ -6,17 +6,17 @@ var fs=require('fs');
 const fileName="data.json";
 var getAll=function(){
     fs.readFile(fileName, (err,data)=>{
-        let members=JSON.parse(data.toString());
+        let members=JSON.parse(data.toString()); 
         console.log(members);
-    })  
+    })
 };
 
-var getByName=function(name){ 
+var getByName=function(name){
     fs.readFile(fileName, (err,data)=>{
         let members=JSON.parse(data.toString());
         let foundPerson=members.find((person)=>(person.name ==name));
         console.log(foundPerson);
-    })  
+    })
 };
 
 var getById=function(id){
@@ -24,7 +24,7 @@ var getById=function(id){
         let members=JSON.parse(data.toString());
         let foundPerson=members.find((person)=>(person.id ==id));
         console.log(foundPerson);
-    })  
+    })
 };
 
 var remove=function(id){
@@ -36,7 +36,7 @@ var remove=function(id){
             console.log('file is updated');
             getAll();
         })
-    })  
+    })
 }
 
 var insert=function(person){
@@ -49,7 +49,7 @@ var insert=function(person){
             console.log('file is updated');
             getAll();
         })
-    })  
+    })
 }
 
 var update=function(personTobeUpdated){
@@ -62,15 +62,16 @@ var update=function(personTobeUpdated){
             console.log('file is updated');
             getAll();
         })
-    })  
+    })
 }
 
 
 //testing functions
 getAll();
-getById(1);
-var person={"id":8, "name":"Chirag", "email":"chirag@gmail.com"};
-insert(person);
-remove(6);
-getAll();
-update(person);
+//getById(1);
+//var person={"id":7, "name":"abcd", "email":"chirag@gmail.com"};
+// insert(person);
+// remove(10);
+// getAll();
+//var personTobeUpdated={"id":2, "name":"yash", "email":"chirag@gmail.com"};
+//update(personTobeUpdated);

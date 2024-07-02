@@ -17,7 +17,7 @@ emitter.addListener('overBalance',tax.payIncomeTax);
 
 exports.Account=function(InitialAmount){
     var balance=InitialAmount;
-    
+
     var monitor=function(){
         if(balance>=25000){
             emitter.emit("overBalance");

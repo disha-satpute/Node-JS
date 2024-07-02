@@ -13,7 +13,6 @@ exports.getLogin=(req,res)=>{
 
 exports.postLogin=(req,res)=>{
     let user = req.body;
-    console.log(user);
     if(user.email=="disha123@gmail.com" && user.password=="1234"){
         let data={
             time:Date(),
