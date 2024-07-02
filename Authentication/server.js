@@ -1,9 +1,13 @@
+//modules
+
 const express=require("express");
 const bodyParser=require('body-parser');
 const fs=require("fs");
 
 
 var app=express();
+
+//middleware configuration
 app.use(bodyParser.json());
 
 var fileName = "credential.json";
