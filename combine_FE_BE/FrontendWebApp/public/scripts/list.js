@@ -1,4 +1,4 @@
-// Using Document.getElementById
+//Using DOM inbuilt Function
 
 //client side JS code
 
@@ -14,13 +14,18 @@ var fetchData=()=>{
         url:url,
         success:(data=>{
                 console.log(data);
-                let strData=JSON.stringify(data);
-               // alert(strData);
-                let para1 = document.getElementById("para");
-                para1.textContent = strData;
+     //DOM Manipulation
+                var pro = document.getElementById("productList");
+                for (var i=0;i<data.length;i++){
+              const node=document.createElement("li");
+              const textnode =document.createTextNode(data[i].name);
+              node.appendChild(textnode);
+              pro.appendChild(node);
+
+            }
+
         })
      })
-
 
     console.log("Button is clicked..");
 }
