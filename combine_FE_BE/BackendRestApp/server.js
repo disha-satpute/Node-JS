@@ -7,9 +7,7 @@ const path = require('path');
 const app = express();
 const OneDay = 1000 * 60 * 60 * 24;
 
-// Load product data from product.json
-const productDataPath = path.join(__dirname, 'product.json');
-const ProductData = JSON.parse(fs.readFileSync(productDataPath, 'utf-8'));
+
 
 // Middleware configuration for session
 const sessionMiddleware = expressSession({
@@ -21,6 +19,20 @@ const sessionMiddleware = expressSession({
 
 // Use session middleware
 app.use(sessionMiddleware);
+
+
+app.get("/api/products",(req,res)=>{
+    let products =[
+        {"id":11,"name":"Lipstick","colour":"red","price":90,"quantity":7},
+        {"id":12,"name":"NailPaint","colour":"Black","price":50,"quantity":23},
+        {"id":13,"name":"Earrings","colour":"Blue","price":190,"quantity":17},
+        {"id":14,"name":"NeckLace","colour":"Golden","price":900,"quantity":11},
+        {"id":15,"name":"Rings","colour":"Silver","price":20,"quantity":75},
+        {"id":16,"name":"Lipstick","colour":"pink","price":30,"quantity":21}
+    ];
+    res.send(products);
+})
+
 
 // Endpoint to get the cart
 app.get("/api/cart", (req, res) => {
