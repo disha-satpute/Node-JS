@@ -12,7 +12,14 @@ var fetchData=()=>{
         url:url,
         success:(data=>{
                 console.log(data);
+                let strData=JSON.stringify(data);
+               // alert(strData);
+                let para1 = document.getElementById("para");
+                para1.textContent = strData;
         })
      })
+
+     //DOM Manipulation
+     
     console.log("Button is clicked..");
 }

@@ -1,11 +1,12 @@
-
 const express = require('express');
 const expressSession = require('express-session');
-const fs = require('fs');
-const path = require('path');
+const cors = require('cors');
 
 const app = express();
 const OneDay = 1000 * 60 * 60 * 24;
+
+// Correct usage of cors middleware
+app.use(cors());
 
 // Middleware configuration for session
 const sessionMiddleware = expressSession({
@@ -18,23 +19,22 @@ const sessionMiddleware = expressSession({
 // Use session middleware
 app.use(sessionMiddleware);
 
-
-app.get("/api/products",(req,res)=>{
-    let products =[
-        {"id":11,"name":"Lipstick","colour":"red","price":90,"quantity":7},
-        {"id":12,"name":"NailPaint","colour":"Black","price":50,"quantity":23},
-        {"id":13,"name":"Earrings","colour":"Blue","price":190,"quantity":17},
-        {"id":14,"name":"NeckLace","colour":"Golden","price":900,"quantity":11},
-        {"id":15,"name":"Rings","colour":"Silver","price":20,"quantity":75},
-        {"id":16,"name":"Lipstick","colour":"pink","price":30,"quantity":21}
+app.get("/api/products", (req, res) => {
+    let products = [
+        {"id": 11, "name": "Lipstick", "colour": "red", "price": 90, "quantity": 7},
+        {"id": 12, "name": "NailPaint", "colour": "Black", "price": 50, "quantity": 23},
+        {"id": 13, "name": "Earrings", "colour": "Blue", "price": 190, "quantity": 17},
+        {"id": 14, "name": "NeckLace", "colour": "Golden", "price": 900, "quantity": 11},
+        {"id": 15, "name": "Rings", "colour": "Silver", "price": 20, "quantity": 75},
+        {"id": 16, "name": "Lipstick", "colour": "pink", "price": 30, "quantity": 21}
     ];
     res.send(products);
-})
-
+});
 
 // Running the server
-app.listen(6060, () => {
-    console.log("Server is running on 6060");
+const PORT = 6060;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
 
 
