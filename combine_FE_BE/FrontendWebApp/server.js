@@ -1,6 +1,9 @@
 const express = require('express');
 
+
 const app = express();
+
+//for accessing data in public folder directly
 app.use(express.static('public'));
 
 app.get("/",(req,res)=>{
