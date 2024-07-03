@@ -8,5 +8,5 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(7000,()=>{
-    console.log("Website is hosted on webserver");
+    console.log("Website is hosted on webserver on 7000 port");
 })

@@ -7,8 +7,6 @@ const path = require('path');
 const app = express();
 const OneDay = 1000 * 60 * 60 * 24;
 
-
-
 // Middleware configuration for session
 const sessionMiddleware = expressSession({
     secret: 'cart',
@@ -34,6 +32,21 @@ app.get("/api/products",(req,res)=>{
 })
 
 
+// Running the server
+app.listen(6060, () => {
+    console.log("Server is running on 6060");
+});
+
+
+
+
+
+
+
+
+
+
+/*
 // Endpoint to get the cart
 app.get("/api/cart", (req, res) => {
     if (req.session.cart) {
@@ -89,10 +102,6 @@ app.get("/api/removeFromCart/:id", (req,res) => {
         }
     });
 });
-
-// Running the server
-app.listen(6060, () => {
-    console.log("Server is running");
-});
+*/
 
 
