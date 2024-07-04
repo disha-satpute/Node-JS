@@ -5,7 +5,7 @@
             Home page
         </title>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="./scripts/list.js"></script>
+        <script src="./scripts/app.js"></script>
 
     </head>
     <body>
@@ -17,21 +17,16 @@
             <a href="index.html">Home</a> |  <a href="login.html">Login</a> | <a href="register.html">Register</a> |  <a href="list.html">List</a>
         <hr/>
 
-<h2>HOME PAGE</h2>
-<h3>Products in Transflower</h3>
+<h2>DETAILS PAGE</h2>
+<h3>Product Details</h3>
+<button onclick="fetchProductDetails()"> Get Product Details</button>
+<br>
 
-<button onclick="fetchData()"> Get Products</button>
-<ul id="productList">
+<p id="id"></p>
+<p id="name"></p>
+<p id="colour"></p>
+<p id="price"></p>
+<p id="quantity"></p>
 
-</ul>
-
-<div>
-    <button onclick="redirect()">Next Page</button>
-</div>
-<script>
-     var redirect=()=>{
-        location.replace('/login.html');
-     }
-</script>
  </body>
 </html>

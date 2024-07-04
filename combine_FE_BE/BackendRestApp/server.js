@@ -1,12 +1,18 @@
 const express = require('express');
 const expressSession = require('express-session');
 const cors = require('cors');
+const jwt = require('jsonwebtoken');
+
+const secretKey = "sunflower";
 
 const app = express();
 const OneDay = 1000 * 60 * 60 * 24;
 
 // Correct usage of cors middleware
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
 app.use(cors());
+
 
 // Middleware configuration for session
 const sessionMiddleware = expressSession({
@@ -30,6 +36,70 @@ app.get("/api/products", (req, res) => {
     ];
     res.send(products);
 });
+app.get("/api/products/id", (req, res) => {
+    let product = {"id": 12, "name": "NailPaint", "colour": "Black", "price": 50, "quantity": 23};
+    res.send(product);
+});
+
+app.post("/api/login",(req,res)=>{
+    let user = req.body;
+
+    if(user.email==="disha2@gmail.com" && user.pass==="disha"){
+        let data ={
+            "time": Date(),
+            "client":user.email
+        };
+        let token = jwt.sign(data,secretKey);
+        console.log(token);
+      res.send(token);
+    }
+    else{
+        res.send("Invalid user");
+    }
+});
+
+/*app.get("/api/orders",(req,res)=>{
+    let authkey = "Authorization";
+    let token= req.header(authkey);
+    let data= jwt.verify(token,secretKey);
+
+    if(data.client == "disha2@gmail.com"){
+        let orders = [
+            {"id":101,"date":"20/02/2022","price":2300,"status":"processed"},
+            {"id":102,"date":"02/04/2022","price":2300,"status":"rejected"},
+            {"id":103,"date":"25/04/2022","price":2300,"status":"processed"},
+            {"id":104,"date":"10/11/2022","price":2300,"status":"completed"},
+            {"id":105,"date":"29/12/2022","price":2300,"status":"processed"},
+        ];
+        res.send(orders);
+    }
+    else{
+        res.send("error");
+    }
+});*/
+
+app.get("/api/orders", (req, res) => {
+    // orders details
+    var orders = [
+      { id: 1, date: "1/2/2024", total: 52300, status: "intransmit" },
+      { id: 2, date: "11/12/2024", total: 52300, status: "processed" },
+      { id: 3, date: "30/8/2024", total: 52300, status: "processed" },
+      { id: 4, date: "12/6/2024", total: 52300, status: "intransmit" },
+      { id: 5, date: "25/3/2024", total: 52300, status: "processed" },
+    ];
+    // key to store token
+    let authKey = "Authorization";
+    let token = req.header(authKey);
+    let extractedUser = jwt.verify(token, secretKey);
+    if (extractedUser.client == "disha2@gmail.com") {
+      res.send(orders);
+    }
+    else
+    {
+          res.send("unauthorized request");
+    }
+  });
+
 
 // Running the server
 const PORT = 6060;
@@ -46,62 +116,5 @@ app.listen(PORT, () => {
 
 
 
-/*
-// Endpoint to get the cart
-app.get("/api/cart", (req, res) => {
-    if (req.session.cart) {
-        res.send(req.session.cart);
-    } else {
-        req.session.cart = [];
-        res.send(req.session.cart);
-    }
-});
-
-// Endpoint to add to cart
-app.get("/api/addToCart/:id", (req, res) => {
-    const product = ProductData.find(p => p.ProductId == req.params.id); // Use loose comparison for ID
-
-    if (!product) {
-         res.send('Product not found');
-    }
-
-    if (!req.session.cart) {
-        req.session.cart = [];
-    }
-
-    let item = {
-        productId: product.ProductId,
-        productName: product.ProductName,
-        productPrice: product.ProductPrice
-    };
-
-    req.session.cart.push(item);
-    res.send(req.session.cart);
-});
-
-
-//remove from cart
-app.get("/api/removeFromCart/:id", (req,res) => {
-    const id = req.params.id;
-
-    if (req.session.cart) {
-        req.session.cart = req.session.cart.filter(product => product.productId !== id);
-        res.send(req.session.cart);
-    } else {
-        res.send('Cart is empty');
-    }
-});
-
-//remove all data (destroy session)
- app.get("/api/checkout", (req, res) => {
-    req.session.destroy((err) => {
-        if (err) {
-            res.send("error");
-        } else {
-            res.send("Session destroyed");
-        }
-    });
-});
-*/
 
 
