@@ -47,7 +47,7 @@ app.delete("/api/people/:id",(req,res)=>
             {
                 res.send("data deleted successfully..");
             })
-    
+
         })
     })
 

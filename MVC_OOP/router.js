@@ -2,9 +2,11 @@ import Product from './model.js';
 import ProductController from './controller.js';
 import ProductManager from './repository.js';
 export default function(app){
+
     let allProducts=[];
     let mgr=new ProductManager();
     let controller=new ProductController(mgr);
+
     app.get("/api/products",(req, res)=>{
                                         //let allProducts=productController.get();
                                         //Models
@@ -20,11 +22,13 @@ export default function(app){
                                         controller.post(flower4);
                                         allProducts=controller.get()
                                         res.send(allProducts)});
+
     app.get("/api/products/:id", (req, res) => {
                                             let productId = req.params.id;
                                             let product = controller.getById(productId);
                                             res.send(product);
                                           });
+
   // POST a new product
   app.post("/api/products", (req, res) => {
     let { id, name, description, quantity, price } = req.body;
