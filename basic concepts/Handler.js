@@ -9,7 +9,7 @@ exports.display=function (){
             state:"Maharashtra",
             city:"Pune"
         }
-        
+
     };
 console.log("person info : " + person.firstname );
 console.log(person);

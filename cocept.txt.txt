@@ -1,0 +1,39 @@
+------------------------Concepts in NodeJs that we implement in MERN repository-----------------------------
+
+1) Callback Function :
+
+-  A callback in Node is a non-blocking function that executes task completion, enabling asynchronous processing. 
+-  It facilitates scalability by allowing Nodejs to handle multiple requests without waiting for operations to execute
+- These callbacks allow developers to interact with request data and construct the appropriate server responses.
+
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------
+
+2) Built-in 'events' module (Banking Solution)
+
+var module = require('events')     //This module provides an EventEmitter class that allows you to create and handle events in Node.js applications.
+var emitter = new module.EventEmitter();  //The emitter object now can emit events and has methods to handle these events.
+
+emitter.addListener('underBalance',bank.blockAccount);
+emitter.addListener('overBalance',tax.payIncomeTax);
+                    /                     \       
+                   /                        \
+Event Listner Registration     'overBalance' is the name of the event.
+we also used 'emitter.on'      When emitter.emit('overBalance') is called elsewhere in the code ,this listener function 'tax.payIncomeTax)' will be triggered.
+
+return{
+        withdraw:withdraw,  // each key-value pair represents a property where the key is the property name and the value is a function
+        deposit:deposit,
+        getBalance:getBalance
+    }
+the 'return' statement in the code is creating and exporting an object.
+This object structure allows external code to interact with the account object in a controlled manner.
+
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------
+
+3) SoC (Seperation of Concern) :
+-  SoC is a fundamental principle in software engineering that promotes clear(no complexity), maintainable, and efficient code by separating 
+different concerns into Number of modules or components.
+-  SoC is not just beneficial but essential for managing the complexity and scale of large software projects.
+-  It is good habit and also foundational principle that leads to better software architecture
+
+    
