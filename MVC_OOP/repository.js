@@ -1,7 +1,4 @@
 
-//Repository Manager
-//Collection
-
 export  default class ProductManager{
     constructor(){
         this.products=[];
