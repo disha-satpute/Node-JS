@@ -6,7 +6,7 @@ var fs=require('fs');
 const fileName="data.json";
 var getAll=function(){
     fs.readFile(fileName, (err,data)=>{
-        let members=JSON.parse(data.toString()); 
+        let members=JSON.parse(data.toString());
         console.log(members);
     })
 };
