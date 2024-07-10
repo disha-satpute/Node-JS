@@ -36,4 +36,41 @@ different concerns into Number of modules or components.
 -  SoC is not just beneficial but essential for managing the complexity and scale of large software projects.
 -  It is good habit and also foundational principle that leads to better software architecture
 
-    
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------
+
+4) fs module :
+- The Node.js file system module allows you to work with the file system on your computer.
+
+fs.appendFile() - method appends specified content to a file. If the file does not exist, the file will be created
+
+fs.open() -  method takes a "flag" as the second argument, if the flag is "w" for "writing", the specified file is opened for writing. If the file does not exist, an empty file is created 
+                   e.g :  fs.open('mynewfile2.txt', 'w', function (err, file) {  }
+
+fs.writeFile() -  function is used to asynchronously write data to a file.
+
+fs.readFile() - function is used to asynchronously read the entire contents of a file.
+
+fs.rename() - rename the file.
+
+fs.unlink() - Delete the file.
+
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------
+5) JSON file :
+
+- JSON stands for JavaScript Object Notation
+- JSON is a lightweight format for storing and transporting data
+- JSON is often used when data is sent from a server to a web page
+e.g 
+{
+"employees":[
+    {"firstName":"John", "lastName":"Doe"},
+    {"firstName":"Anna", "lastName":"Smith"},
+    {"firstName":"Peter", "lastName":"Jones"}
+]
+}
+
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------
+
+6)
+JSON.parse(data.toString()): Parses the string data into a JavaScript object.
+let strMembers = JSON.stringify(members);: This line converts the modified members array back into a JSON-formatted string.
