@@ -55,6 +55,7 @@ fs.rename() - rename the file.
 fs.unlink() - Delete the file.
 
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
+
 5) JSON file :
 
 - JSON stands for JavaScript Object Notation
@@ -69,8 +70,29 @@ e.g
 ]
 }
 
+Built-in methods for JSON :
+
+- JSON.parse(data.toString()) : Parses the string data into a JavaScript object.
+
+- JSON.stringify(members) : This line converts the modified members array back into a JSON-formatted string.
+
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
 6)
-JSON.parse(data.toString()): Parses the string data into a JavaScript object.
-let strMembers = JSON.stringify(members);: This line converts the modified members array back into a JSON-formatted string.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
