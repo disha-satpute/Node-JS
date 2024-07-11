@@ -15,7 +15,7 @@ var emitter = new module.EventEmitter();  //The emitter object now can emit even
 
 emitter.addListener('underBalance',bank.blockAccount);
 emitter.addListener('overBalance',tax.payIncomeTax);
-                    /                     \       
+                    /                     \
                    /                        \
 Event Listner Registration     'overBalance' is the name of the event.
 we also used 'emitter.on'      When emitter.emit('overBalance') is called elsewhere in the code ,this listener function 'tax.payIncomeTax)' will be triggered.
@@ -44,15 +44,15 @@ different concerns into Number of modules or components.
 fs.appendFile() - method appends specified content to a file. If the file does not exist, the file will be created
 
 fs.open() -  method takes a "flag" as the second argument, if the flag is "w" for "writing", the specified file is opened for writing. If the file does not exist, an empty file is created 
-                   e.g :  fs.open('mynewfile2.txt', 'w', function (err, file) {  }
+              e.g :  fs.open('mynewfile2.txt', 'w', function (err, file) {  }
 
 fs.writeFile() -  function is used to asynchronously write data to a file.
 
-fs.readFile() - function is used to asynchronously read the entire contents of a file.
+fs.readFile()  - function is used to asynchronously read the entire contents of a file.
 
-fs.rename() - rename the file.
+fs.rename()    - rename the file.
 
-fs.unlink() - Delete the file.
+fs.unlink()    - Delete the file.
 
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
