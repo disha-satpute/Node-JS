@@ -38,7 +38,7 @@ different concerns into Number of modules or components.
 
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
-4) fs module :
+4) fs module : (CRUD)
 - The Node.js file system module allows you to work with the file system on your computer.
 
 fs.appendFile() - method appends specified content to a file. If the file does not exist, the file will be created
@@ -56,12 +56,12 @@ fs.unlink()    - Delete the file.
 
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
-5) JSON file :
+5) JSON file : (CRUD)
 
 - JSON stands for JavaScript Object Notation
 - JSON is a lightweight format for storing and transporting data
 - JSON is often used when data is sent from a server to a web page
-e.g 
+e.g
 {
 "employees":[
     {"firstName":"John", "lastName":"Doe"},
@@ -77,6 +77,8 @@ Built-in methods for JSON :
 - JSON.stringify(members) : This line converts the modified members array back into a JSON-formatted string.
 
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
+
+6)
 
 
 
