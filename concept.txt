@@ -108,6 +108,7 @@ ii) body-parser - This module was commonly used to parse request bodies.
 - res.sendFile : This a method used to send a file to the client as an HTTP response
 
 - folderpath : This variable to perform operations like reading files, serving static content, or accessing resources within that directory
+
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
 
