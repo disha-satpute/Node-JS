@@ -78,7 +78,16 @@ Built-in methods for JSON :
 
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
-6)
+6) Database module : (dbApp)
+- mysql  : if you want to interact with MySQL databases, you can use the 'mysql' module.
+- mysql2 : It offers several advantages over the older module. It provides better support for modern MySQL features such as prepared statements and stored procedures.
+
+- mysql.createConnection() - is used to create a connection object with connection details such as host, user, password, and database name.
+- connection.connect() - establishes a connection to the MySQL server. If successful, it logs the connection thread ID.
+- connection.query() - executes a SQL query on the connected MySQL server.
+- connection.end() - closes the connection to the MySQL server once all queries are executed.
+
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
 
 
