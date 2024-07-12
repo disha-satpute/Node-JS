@@ -19,7 +19,7 @@ app.post("/api/login", (req, res) =>
     {
       let getData = req.body;
       var folderpath = "D:/TAP/MERN Stack/HtmlServer/public";
-        fs.readFile(fileName, (err, data) => 
+        fs.readFile(fileName, (err, data) =>
         {
             var people = JSON.parse(data.toString());
             var yourdata = people.find((member) => member.email == getData.email && member.password == getData.password );
@@ -42,7 +42,7 @@ app.post("/api/login", (req, res) =>
             let userData=req.body;
             var fileName = "credential.json";
             fs.readFile(fileName,(err,data)=>{
-                let str=data.toString();            //get data from body 
+                let str=data.toString();            //get data from body
                 let credentials=JSON.parse(str);       //parse into json array
                 credentials.push(userData);      //push data received from body  into json array
                 let string1=JSON.stringify(credentials);   //write json array into file
@@ -50,7 +50,7 @@ app.post("/api/login", (req, res) =>
                     {
                         res.sendFile("register.html",{root :folderpath});
                     };
-        
+
                 });
             });
         });

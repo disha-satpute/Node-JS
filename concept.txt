@@ -89,10 +89,26 @@ Built-in methods for JSON :
 
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
+7) Modules : (Html Server)
 
+i) express - It simplifies the development of web applications by providing a wide range of functionalities and utilities to handle various tasks such as
+             1) Routing - get, post, put,delete
+             2) Middleware - req, res, next
+             3) Template Engines - EJS, Handlebars
+             4) Static files - serve static files (such as images, CSS, JavaScript, public) using Express’s built-in express.static middleware
+             5) Error handling - define error-handling middleware with four arguments (err, req, res, next)
 
+ii) body-parser - This module was commonly used to parse request bodies.
+             1) JSON Parsing: To handle JSON-encoded bodies:
+                 app.use(express.json());
 
+             2) URL-encoded Parsing: To handle URL-encoded form data (typically sent by HTML forms)
+                 app.use(express.urlencoded({ extended: true }));
 
+- res.sendFile : This a method used to send a file to the client as an HTTP response
+
+- folderpath : This variable to perform operations like reading files, serving static content, or accessing resources within that directory
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
 
 
