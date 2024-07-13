@@ -105,12 +105,15 @@ ii) body-parser - This module was commonly used to parse request bodies.
              2) URL-encoded Parsing: To handle URL-encoded form data (typically sent by HTML forms)
                  app.use(express.urlencoded({ extended: true }));
 
-- res.sendFile : This a method used to send a file to the client as an HTTP response
+- res.readFile : this function read file which is send in the readfile(filename,(err,data)) Function.
 
-- folderpath : This variable to perform operations like reading files, serving static content, or accessing resources within that directory
+- res.sendFile : This a method used to send a file to the client as an HTTP response.
+
+- folderpath : This variable to perform operations like reading files, serving static content, or accessing resources within that directory.
 
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
+8) Modules : (MVC_App1)
 
 
 
