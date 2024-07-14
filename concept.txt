@@ -124,13 +124,12 @@ EJS : EJS stands for Embedded JavaScript,
 JS Tags : EJS allows JavaScript code to be embedded directly within HTML markup using special tags (<% %> for scriptlet tags and <%= %> for output tags).
 
 Control Structures: EJS supports JavaScript control structures like if, else, for, etc., enabling conditional rendering and iteration over data.
+                     <% if (user) { %>
+                         <p>Hello <%= user.name %>!</p>
+                     <% } else { %>
+                         <p>Please log in to continue.</p>
+                     <% } %>
 _____________________________________________________________________________________________________________________________________________________________________
-
-
-
-
-
-
 
 
 
