@@ -5,8 +5,7 @@
 -  A callback in Node is a non-blocking function that executes task completion, enabling asynchronous processing. 
 -  It facilitates scalability by allowing Nodejs to handle multiple requests without waiting for operations to execute
 - These callbacks allow developers to interact with request data and construct the appropriate server responses.
-
---------#--------------------#--------------------#------------------------#-------------------------#---------------------#-----------------------------
+_____________________________________________________________________________________________________________________________________________________________________
 
 2) Built-in 'events' module (Banking Solution)
 
@@ -27,16 +26,14 @@ return{
     }
 the 'return' statement in the code is creating and exporting an object.
 This object structure allows external code to interact with the account object in a controlled manner.
-
---------#--------------------#--------------------#------------------------#-------------------------#---------------------#--------------------------
+_____________________________________________________________________________________________________________________________________________________________________
 
 3) SoC (Seperation of Concern) :
 -  SoC is a fundamental principle in software engineering that promotes clear(no complexity), maintainable, and efficient code by separating 
 different concerns into Number of modules or components.
 -  SoC is not just beneficial but essential for managing the complexity and scale of large software projects.
 -  It is good habit and also foundational principle that leads to better software architecture
-
---------#--------------------#--------------------#------------------------#-------------------------#---------------------#-----------------------
+_____________________________________________________________________________________________________________________________________________________________________
 
 4) fs module : (CRUD)
 - The Node.js file system module allows you to work with the file system on your computer.
@@ -53,8 +50,7 @@ fs.readFile()  - function is used to asynchronously read the entire contents of 
 fs.rename()    - rename the file.
 
 fs.unlink()    - Delete the file.
-
---------#--------------------#--------------------#------------------------#-------------------------#---------------------#--------------------
+_____________________________________________________________________________________________________________________________________________________________________
 
 5) JSON file : (CRUD)
 
@@ -75,8 +71,7 @@ Built-in methods for JSON :
 - JSON.parse(data.toString()) : Parses the string data into a JavaScript object.
 
 - JSON.stringify(members) : This line converts the modified members array back into a JSON-formatted string.
-
---------#--------------------#--------------------#------------------------#-------------------------#---------------------#--------------------------
+_____________________________________________________________________________________________________________________________________________________________________
 
 6) Database module : (dbApp)
 - mysql  : if you want to interact with MySQL databases, you can use the 'mysql' module.
@@ -86,8 +81,7 @@ Built-in methods for JSON :
 - connection.connect() - establishes a connection to the MySQL server. If successful, it logs the connection thread ID.
 - connection.query() - executes a SQL query on the connected MySQL server.
 - connection.end() - closes the connection to the MySQL server once all queries are executed.
-
---------#--------------------#--------------------#------------------------#-------------------------#---------------------#------------------------------
+_____________________________________________________________________________________________________________________________________________________________________
 
 7) Modules : (Html Server)
 
@@ -110,8 +104,7 @@ ii) body-parser - This module was commonly used to parse request bodies.
 - res.sendFile : This a method used to send a file to the client as an HTTP response.
 
 - folderpath : This variable to perform operations like reading files, serving static content, or accessing resources within that directory.
-
---------#--------------------#--------------------#------------------------#-------------------------#---------------------#--------------------
+_____________________________________________________________________________________________________________________________________________________________________
 
 8) MVC Architecture : (MVC_APP1)
 
@@ -131,8 +124,7 @@ EJS : EJS stands for Embedded JavaScript,
 JS Tags : EJS allows JavaScript code to be embedded directly within HTML markup using special tags (<% %> for scriptlet tags and <%= %> for output tags).
 
 Control Structures: EJS supports JavaScript control structures like if, else, for, etc., enabling conditional rendering and iteration over data.
-
---------#--------------------#--------------------#------------------------#-------------------------#---------------------#---------------------
+_____________________________________________________________________________________________________________________________________________________________________
 
 
 
