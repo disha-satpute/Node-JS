@@ -1,4 +1,4 @@
-------------------------Concepts in NodeJs that we implement in MERN repository-----------------------------
+----------------------------------Concepts in NodeJs that we implement in MERN repository----------------------------------------------
 
 1) Callback Function :
 
@@ -6,7 +6,7 @@
 -  It facilitates scalability by allowing Nodejs to handle multiple requests without waiting for operations to execute
 - These callbacks allow developers to interact with request data and construct the appropriate server responses.
 
---------#--------------------#--------------------#------------------------#-------------------------#---------------------
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------#-----------------------------
 
 2) Built-in 'events' module (Banking Solution)
 
@@ -28,7 +28,7 @@ return{
 the 'return' statement in the code is creating and exporting an object.
 This object structure allows external code to interact with the account object in a controlled manner.
 
---------#--------------------#--------------------#------------------------#-------------------------#---------------------
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------#--------------------------
 
 3) SoC (Seperation of Concern) :
 -  SoC is a fundamental principle in software engineering that promotes clear(no complexity), maintainable, and efficient code by separating 
@@ -36,15 +36,15 @@ different concerns into Number of modules or components.
 -  SoC is not just beneficial but essential for managing the complexity and scale of large software projects.
 -  It is good habit and also foundational principle that leads to better software architecture
 
---------#--------------------#--------------------#------------------------#-------------------------#---------------------
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------#-----------------------
 
 4) fs module : (CRUD)
 - The Node.js file system module allows you to work with the file system on your computer.
 
 fs.appendFile() - method appends specified content to a file. If the file does not exist, the file will be created
 
-fs.open() -  method takes a "flag" as the second argument, if the flag is "w" for "writing", the specified file is opened for writing. If the file does not exist, an empty file is created 
-              e.g :  fs.open('mynewfile2.txt', 'w', function (err, file) {  }
+fs.open() -  method takes a "flag" as the second argument, if the flag is "w" for "writing", the specified file is opened for writing. 
+             If the file does not exist, an empty file is created  e.g :  fs.open('mynewfile2.txt', 'w', function (err, file) {  }
 
 fs.writeFile() -  function is used to asynchronously write data to a file.
 
@@ -54,7 +54,7 @@ fs.rename()    - rename the file.
 
 fs.unlink()    - Delete the file.
 
---------#--------------------#--------------------#------------------------#-------------------------#---------------------
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------#--------------------
 
 5) JSON file : (CRUD)
 
@@ -76,7 +76,7 @@ Built-in methods for JSON :
 
 - JSON.stringify(members) : This line converts the modified members array back into a JSON-formatted string.
 
---------#--------------------#--------------------#------------------------#-------------------------#---------------------
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------#--------------------------
 
 6) Database module : (dbApp)
 - mysql  : if you want to interact with MySQL databases, you can use the 'mysql' module.
@@ -87,7 +87,7 @@ Built-in methods for JSON :
 - connection.query() - executes a SQL query on the connected MySQL server.
 - connection.end() - closes the connection to the MySQL server once all queries are executed.
 
---------#--------------------#--------------------#------------------------#-------------------------#---------------------
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------#------------------------------
 
 7) Modules : (Html Server)
 
@@ -111,7 +111,7 @@ ii) body-parser - This module was commonly used to parse request bodies.
 
 - folderpath : This variable to perform operations like reading files, serving static content, or accessing resources within that directory.
 
---------#--------------------#--------------------#------------------------#-------------------------#---------------------
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------#--------------------
 
 8) MVC Architecture : (MVC_APP1)
 
@@ -125,7 +125,14 @@ View : Presents data to the user and handles user interaction.It consist of Html
 Controller : Handles user input and updates the model and view accordingly. It helps keep everything organized and ensures that
              different parts of your application work together smoothly.
 
---------#--------------------#--------------------#------------------------#-------------------------#---------------------
+EJS : EJS stands for Embedded JavaScript,
+      It allows you to embed JavaScript code directly within your HTML files, making it easier to generate dynamic content based on data from your application.
+
+JS Tags : EJS allows JavaScript code to be embedded directly within HTML markup using special tags (<% %> for scriptlet tags and <%= %> for output tags).
+
+Control Structures: EJS supports JavaScript control structures like if, else, for, etc., enabling conditional rendering and iteration over data.
+
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------#---------------------
 
 
 
