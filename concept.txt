@@ -113,7 +113,19 @@ ii) body-parser - This module was commonly used to parse request bodies.
 
 --------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
+8) MVC Architecture : (MVC_APP1)
 
+- MVC (Model-View-Controller) is a software design pattern commonly used for structuring applications.
+- you can implement MVC architecture in Node.js applications to promote separation of concerns and maintainability.
+
+Model : defined as a representation of the data(database like mongodb,mysql) and business logic(operations,workflow) of an application.
+
+View : Presents data to the user and handles user interaction.It consist of Html,CSS,react,Angular JS
+
+Controller : Handles user input and updates the model and view accordingly. It helps keep everything organized and ensures that
+             different parts of your application work together smoothly.
+
+--------#--------------------#--------------------#------------------------#-------------------------#---------------------
 
 
 
