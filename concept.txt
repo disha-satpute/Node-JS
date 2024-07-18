@@ -154,5 +154,6 @@ ________________________________________________________________________________
 - An async function is a function that operates asynchronously via the event loop, and always returns a promise.
   Inside an async function, you can use the await keyword to pause the execution of the function until a promise is resolved or rejected.
 
-- The await keyword can only be used inside async functions. It waits for a promise to resolve and returns the resolved value. 
-  If the promise is rejected, it throws an error that can be caught using try...catch. 
+- The await keyword can only be used inside async functions. It waits for a promise to resolve and returns the resolved value.
+  If the promise is rejected, it throws an error that can be caught using try...catch.
+___________________________________________________________________________________________________________________________________________________________________
