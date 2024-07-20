@@ -186,3 +186,13 @@ const path = require('path');
 const filePath = path.join(__dirname, 'product.json');
 console.log(filePath); // Outputs: '/your/current/directory/public/index.html'
 ___________________________________________________________________________________________________________________________________________________________________
+
+12) Secure Web Server : (SecureWebServer)
+
+It looks like you're setting up a Node.js application with Express and using some additional modules like body-parser and jsonwebtoken
+with Secret key ,authorization Key
+Its about implementing token-based authentication with JSON Web Tokens (JWTs) and handling
+the authentication key (authkey).
+
+Token :  It is a piece of digitally signed data that serves as a credential representing the identity and permissions of a user or entity.
+         Tokens are widely used for authentication and authorization purposes in web applications
