@@ -157,3 +157,32 @@ ________________________________________________________________________________
 - The await keyword can only be used inside async functions. It waits for a promise to resolve and returns the resolved value.
   If the promise is rejected, it throws an error that can be caught using try...catch.
 ___________________________________________________________________________________________________________________________________________________________________
+
+10) State Management : (StateMgmt)
+
+- express-session: This module is used for managing sessions in Express applications.
+                 Sessions allow you to store user data across multiple requests.
+                 It's typically used for authentication and maintaining user sessions.
+
+const session = require('express-session');
+app.use(session({
+    secret: 'your_secret_here', // Change this to a secure random string
+    resave: false,
+    saveUninitialized: false
+}));
+
+Using session: Once set up, you can now use req.session to store and access session data across requests.
+               Here's a simple example of setting and accessing session data:
+
+app.get('/setSession', (req, res) => {
+req.session.username = 'JohnDoe';
+res.send('Session data has been set');
+});
+
+- path: This module provides utilities for working with file and directory paths.
+      It helps in constructing absolute paths and resolving relative paths.
+
+const path = require('path');
+const filePath = path.join(__dirname, 'product.json');
+console.log(filePath); // Outputs: '/your/current/directory/public/index.html'
+___________________________________________________________________________________________________________________________________________________________________
