@@ -134,9 +134,8 @@ Control Structures: EJS also supports JavaScript control structures like if, els
                      <% } %>
 ___________________________________________________________________________________________________________________________________________________________________
 
-8) Module : (MVC_APP2)
+8) JWT Module : (MVC_APP2)
 
-- JWT
 jsonwebtoken module : It is a payload (an object containing the data you want to transmit) and sign it with a secret key.
 
 jwt.verify(token, secretKey, (err, decoded) => { }) : To verify and decode a JWT in Node.js, you use the verify method of the jsonwebtoken library.
