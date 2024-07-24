@@ -29,10 +29,10 @@ we also used 'emitter.on'      When emitter.emit('overBalance') is called elsewh
 ___________________________________________________________________________________________________________________________________________________________________
 
 3) SoC (Seperation of Concern) :
--  SoC is a fundamental principle in software engineering that promotes clear(no complexity), maintainable, and efficient code by separating 
+-  SoC is a fundamental principle in software engineering that promotes clear(no complexity), maintainable, and efficient code by separating
 different concerns into Number of modules or components.
 -  SoC is not just beneficial but essential for managing the complexity and scale of large software projects.
--  It is good habit and also foundational principle that leads to better software architecture
+-  It is good habit and also foundational principle that leads to better software architecture.
 _____________________________________________________________________________________________________________________________________________________________________
 
 4) fs module : (CRUD)
@@ -40,7 +40,7 @@ ________________________________________________________________________________
 
 fs.appendFile() - method appends specified content to a file. If the file does not exist, the file will be created
 
-fs.open() -  method takes a "flag" as the second argument, if the flag is "w" for "writing", the specified file is opened for writing. 
+fs.open() -  method takes a "flag" as the second argument, if the flag is "w" for "writing", the specified file is opened for writing.
              If the file does not exist, an empty file is created  e.g :  fs.open('mynewfile2.txt', 'w', function (err, file) {  }
 
 fs.writeFile() -  function is used to asynchronously write data to a file.
