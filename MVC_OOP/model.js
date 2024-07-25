@@ -7,7 +7,6 @@ export  default class Product{
         this.unitprice=unitprice;
         this.quantity=quantity;
     }
-
     display(){
         console.log( "Id="+this.id);
         console.log( "Title="+this.title);

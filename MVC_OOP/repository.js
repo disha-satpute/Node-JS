@@ -26,6 +26,7 @@ export  default class ProductManager{
         this.products=products.filter((product)=>(product.id !==id));
         return this.products;
     }
+    
 }
 
 
