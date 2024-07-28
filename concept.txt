@@ -196,3 +196,8 @@ the authentication key (authkey).
 Token :  It is a piece of digitally signed data that serves as a credential representing the identity and permissions of a user or entity.
          Tokens are widely used for authentication and authorization purposes in web applications
 ___________________________________________________________________________________________________________________________________________________________________
+13) RestApi : (RestAPI-db)
+
+
+A REST API (Representational State Transfer Application Programming Interface) is a standard way for different software applications to communicate over the web.
+Your API can handle standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources.
