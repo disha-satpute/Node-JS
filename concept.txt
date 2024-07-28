@@ -201,3 +201,10 @@ ________________________________________________________________________________
 
 A REST API (Representational State Transfer Application Programming Interface) is a standard way for different software applications to communicate over the web.
 Your API can handle standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources.
+
+HTTP Methods: These define what action is being performed on the resources:
+
+- GET: Retrieve data from the server (e.g., fetching a list of posts).
+- POST: Create new data on the server (e.g., adding a new post).
+- PUT/PATCH: Update existing data on the server (e.g., modifying an existing post).
+- DELETE: Remove data from the server (e.g., deleting a post).
