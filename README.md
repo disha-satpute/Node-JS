@@ -8,7 +8,7 @@ the developers to work in and each of these technologies play a big part in the 
 - MERN Stack comprises of 4 technologies namely: MongoDB, Express, React and Node.js.
 It is designed to make the development process smoother and easier.
 
-1. MongoDB: Non Relational Database
-2. Express: Node.js web server
-3. React: JavaScript Frontend Framework
-4. Node: JavaScript Web Server
+# 1. MongoDB: Non Relational Database
+# 2. Express: Node.js web server
+# 3. React: JavaScript Frontend Framework
+# 4. Node: JavaScript Web Server
