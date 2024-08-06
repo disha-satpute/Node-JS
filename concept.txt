@@ -108,8 +108,8 @@ ________________________________________________________________________________
 
 8) MVC Architecture : (MVC_APP1)
 
-- MVC (Model-View-Controller) is a software design pattern commonly used for structuring applications.
-- you can implement MVC architecture in Node.js applications to promote separation of concerns and maintainability.
+ MVC (Model-View-Controller) is a software design pattern commonly used for structuring applications.
+ You can implement MVC architecture in Node.js applications to promote separation of concerns and maintainability.
 
 1. Model : defined as a representation of the data(database like mongodb,mysql) and business logic(operations,workflow) of an application.
 
@@ -138,11 +138,11 @@ ________________________________________________________________________________
 
 jsonwebtoken module : It is a payload (an object containing the data you want to transmit) and sign it with a secret key.
 
-jwt.verify(token, secretKey, (err, decoded) => { }) : To verify and decode a JWT in Node.js, you use the verify method of the jsonwebtoken library.
+- jwt.verify(token, secretKey, (err, decoded) => { }) : To verify and decode a JWT in Node.js, you use the verify method of the jsonwebtoken library.
                                                      This checks the token’s authenticity and decodes its payload
 
 
-jwt.sign(data, secretKey): This function generates a JSON Web Token (JWT) using the jsonwebtoken library in Node.js.
+- jwt.sign(data, secretKey): This function generates a JSON Web Token (JWT) using the jsonwebtoken library in Node.js.
 ___________________________________________________________________________________________________________________________________________________________________
 
 9) OOP concepts : (MVC_OOP)
@@ -208,4 +208,12 @@ HTTP Methods: These define what action is being performed on the resources
 - POST: Create new data on the server (e.g., adding a new post).
 - PUT/PATCH: Update existing data on the server (e.g., modifying an existing post).
 - DELETE: Remove data from the server (e.g., deleting a post).
+___________________________________________________________________________________________________________________________________________________________________
+
+14) Combining frontEnd & Backend : (combine_FE_BE)
+
+In this snippet, we have to start both server in BackendRestApp (server.js) and FrontendWebApp (server.js) separately.
+
+- In FrontendWebApp , we add html pages which is used to develop UI.
+- In BackendRestApp , we create a JSON file to store data and add RestApi to show pages.
 ___________________________________________________________________________________________________________________________________________________________________
