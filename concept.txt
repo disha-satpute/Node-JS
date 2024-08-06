@@ -190,7 +190,7 @@ ________________________________________________________________________________
 
 - It looks like you're setting up a Node.js application with Express and using some additional modules like body-parser and jsonwebtoken
 with Secret key ,authorization Key
-Its about implementing token-based authentication with JSON Web Tokens (JWTs) and handling
+- Its about implementing token-based authentication with JSON Web Tokens (JWTs) and handling
 the authentication key (authkey).
 
 Token :  It is a piece of digitally signed data that serves as a credential representing the identity and permissions of a user or entity.
