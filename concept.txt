@@ -5,6 +5,7 @@
 -  A callback in Node is a non-blocking function that executes task completion, enabling asynchronous processing. 
 -  It facilitates scalability by allowing Nodejs to handle multiple requests without waiting for operations to execute
 - These callbacks allow developers to interact with request data and construct the appropriate server responses.
+
 ___________________________________________________________________________________________________________________________________________________________________
 
 2) Built-in 'events' module (Banking Solution)
