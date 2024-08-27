@@ -15,4 +15,4 @@ It is designed to make the development process smoother and easier.
 #### 4. Node : JavaScript Web Server
 
 
-In this repo, we studied Node and express.
+- In this repo, we studied Node and express.
