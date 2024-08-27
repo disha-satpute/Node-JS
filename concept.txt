@@ -1,4 +1,4 @@
-----------------------------------Concepts in NodeJs that we implement in MERN repository----------------------------------------------
+----------------------------------Concepts in NodeJs that we implement in Repository----------------------------------------------
 
 1) Callback Function :
 
