@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+     <h3>Transflower</h3>
+     <hr/>
+     <input type="text" id="name" value=""/>
+
+     <form>
+        <table>
+            <tr>
+                <td><label>ID</label></td>
+                <td><input type="number" id="id" name="id"  /></td>
+            </tr>
+
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" id="name" name="name"  /></td>
+            </tr>
+
+
+            <tr>
+                <td><label>City</label></td>
+                <td><input type="text" id="city" name="city" /></td>
+            </tr>
+
+            <tr>
+                <td><label>Email ID</label></td>
+                <td><input type="email" id="email" name="email"  /></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" id="password" name="password"  /></td>
+            </tr>
+            <tr><br/> <br/>
+
+
+     <button onclick="onInsert()">Add</button>
+
+    <br/>
+    <p id="para"> </p>
+<script>
+    var students=[];
+    const onInsert=()=>{
+        var name=document.getElementById("name");
+        var value=name.value;
+        students.push(value);
+        console.log(students);
+
+        var para=document.getElementById("para");
+        para.innerHTML=JSON.stringify(students);
+    }
+</script>
+</body>
+</html>
